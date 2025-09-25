@@ -39,40 +39,10 @@ variable "sku_name" {
   }
 }
 
-variable "postgresql_name" {
-  type        = string
-  description = "Nome do servidor PostgreSQL"
-  default     = "postgres-webapp"
-}
-
-variable "postgresql_admin" {
-  type        = string
-  description = "Nome usuário Admin do servidor POstgreSQL"
-  default     = "pgadmin"
-}
-
-variable "postgresql_sku" {
-  type        = string
-  description = "SKU do servidor PostgreSQL"
-  default     = "B_Standard_B1ms"
-}
-
-variable "postgresql_version" {
-  type        = string
-  description = "Versão do servidor PostgreSQL"
-  default     = "13"
-}
-
-variable "postgresql_database" {
-  type        = string
-  description = "Nome do banco de dados PostgreSQL"
-  default     = "pgwebappdb"
-}
-
 variable "mysql_name" {
   type        = string
   description = "Nome do servidor MySQL"
-  default     = "mysql-webapp-pf0807"
+  default     = "mysql-webapp-2tsc-pf0807"
 }
 
 variable "mysql_admin" {
@@ -96,7 +66,7 @@ variable "mysql_version" {
 variable "mysql_database" {
   type        = string
   description = "Nome do banco de dados MySQL"
-  default     = "mywebappdb"
+  default     = "mywebappdb_loja"
 }
 
 variable "webapp_name" {
