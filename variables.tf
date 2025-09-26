@@ -72,7 +72,7 @@ variable "mysql_database" {
 variable "webapp_name" {
   type        = string
   description = "Nome do WebApp"
-  default     = "WebApp-lojavirtual"
+  default     = "WebApp-lojavirtual-pf0807"
 }
 
 variable "webapp_plan" {
