@@ -28,11 +28,11 @@ resource "azurerm_mysql_flexible_database" "mysql_database" {
   collation = "utf8mb4_unicode_ci"
 }
 
-#resource "azurerm_mysql_flexible_server_firewall_rule" "allow_azure_services" {
-#  name                = "AllowAzureServices"
-#  server_name         = azurerm_mysql_flexible_server.mysql.name
-#  resource_group_name = azurerm_resource_group.rg.name
-#  start_ip_address    = "0.0.0.0"
-#  end_ip_address      = "0.0.0.0"
-#}
+resource "azurerm_mysql_flexible_server_firewall_rule" "allow_azure_services" {
+  name                = "AllowAzureServices"
+  server_name         = azurerm_mysql_flexible_server.mysql.name
+  resource_group_name = azurerm_resource_group.rg.name
+  start_ip_address    = "0.0.0.0"
+  end_ip_address      = "0.0.0.0"
+}
 
