@@ -13,7 +13,8 @@ variable "resource_group_name" {
 variable "vault_name" {
   type        = string
   description = "The name of the key vault to be created. The value will be randomly generated if blank."
-  default     = "kv_ckpt02_rm555799"
+  default     = "kv-ckpt02-rm555799"
+"
 }
 
 variable "db_password" {
