@@ -13,7 +13,7 @@ variable "resource_group_name" {
 variable "vault_name" {
   type        = string
   description = "The name of the key vault to be created. The value will be randomly generated if blank."
-  default     = "kv-webapp-fiap-pf0807"
+  default     = "kv_ckpt02_rm555799"
 }
 
 variable "db_password" {
@@ -42,7 +42,7 @@ variable "sku_name" {
 variable "mysql_name" {
   type        = string
   description = "Nome do servidor MySQL"
-  default     = "mysql-webapp-2tsc-pf0807"
+  default     = "mysql-webapp-ckpt02-rm555799"
 }
 
 variable "mysql_admin" {
@@ -66,13 +66,13 @@ variable "mysql_version" {
 variable "mysql_database" {
   type        = string
   description = "Nome do banco de dados MySQL"
-  default     = "mywebappdb_loja"
+  default     = "mysql-db-rm555799"
 }
 
 variable "webapp_name" {
   type        = string
   description = "Nome do WebApp"
-  default     = "WebApp-lojavirtual-pf0807"
+  default     = "WebApp-ckpt02-rm555799"
 }
 
 variable "webapp_plan" {
@@ -103,4 +103,3 @@ variable "secret_permissions" {
   description = "List of secret permissions."
   default     = ["Get", "List", "Set", "Delete", "Recover", "Backup", "Restore", "Purge"]
 }
-
