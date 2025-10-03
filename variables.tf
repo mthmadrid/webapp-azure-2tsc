@@ -14,7 +14,6 @@ variable "vault_name" {
   type        = string
   description = "The name of the key vault to be created. The value will be randomly generated if blank."
   default     = "kv-ckpt02-rm555799"
-"
 }
 
 variable "db_password" {
@@ -103,4 +102,10 @@ variable "secret_permissions" {
   type        = list(string)
   description = "List of secret permissions."
   default     = ["Get", "List", "Set", "Delete", "Recover", "Backup", "Restore", "Purge"]
+}
+
+variable "mysql_database_two" {
+  type        = string
+  description = "Name of the second MySQL database"
+  default     = "mysql-db-two-rm555799"
 }
